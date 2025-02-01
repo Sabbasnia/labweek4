@@ -1,5 +1,4 @@
 
-```markdown
 # Terraform AWS Lab - Week 4
 
 This repository contains the Terraform configuration for provisioning an AWS EC2 instance with a cloud-init configuration. The lab involves using Terraform to create a VPC, subnet, security group, internet gateway, and an EC2 instance with a user-defined key pair.
