@@ -8,7 +8,7 @@ This project sets up an **Ubuntu EC2 instance** using **Terraform** with the fol
 - Deploys the infrastructure in AWS
 
 ### **Prerequisites**
-Ensure you have the following installed on your local machine:
+Ensure you have the following installed on your linux env:
 - [Terraform](https://developer.hashicorp.com/terraform/downloads)
 - AWS CLI (`awscli`)
 - SSH client (for connecting to the instance)
