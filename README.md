@@ -111,4 +111,6 @@ This guide covered setting up an **AWS EC2 instance using Terraform**, including
 
 🚀 **Terraform has successfully deployed an AWS EC2 instance with automated setup!** 🎉
 
+---
+
 **contributors: Nastaran Zirak, Sina Abbasnia**
