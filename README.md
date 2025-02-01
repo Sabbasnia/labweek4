@@ -9,7 +9,7 @@ This project sets up an **Ubuntu EC2 instance** using **Terraform** with the fol
 
 ### **Prerequisites**
 Ensure you have the following installed on your linux env:
-- [Terraform](https://developer.hashicorp.com/terraform/downloads)
+- Terraform
 - AWS CLI (`awscli`)
 - SSH client (for connecting to the instance)
 
@@ -109,8 +109,8 @@ This guide covered setting up an **AWS EC2 instance using Terraform**, including
 - **Connecting via SSH and testing Nginx**
 - **Destroying resources when finished**
 
-🚀 **Terraform has successfully deployed an AWS EC2 instance with automated setup!** 🎉
+**Terraform has successfully deployed an AWS EC2 instance with automated setup!**
 
 ---
 
-**contributors: Nastaran Zirak, Sina Abbasnia**
+**Contributors: Nastaran Zirak, Sina Abbasnia**
