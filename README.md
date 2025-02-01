@@ -75,9 +75,9 @@ Ensure you have the following installed on your linux env:
 
 11. **SSH into the new instance**:
    ```bash
-   ssh -i web-key web@<EC2_PUBLIC_IP>
+   ssh -i web-key web@<34.221.158.213>
    ```
-   - Replace `<EC2_PUBLIC_IP>` with the actual instance public IP.
+   - Replace `<34.221.158.213>` with the actual instance public IP.
 
 12. **Verify that Nginx and Nmap were installed via cloud-init**:
    ```bash
@@ -89,7 +89,7 @@ Ensure you have the following installed on your linux env:
 13. **Access the Nginx Web Server**:
    - Open a browser and visit:
      ```
-     http://<EC2_PUBLIC_IP>
+     http://<34.221.158.213>
      ```
    - You should see the **default Nginx welcome page**.
 
