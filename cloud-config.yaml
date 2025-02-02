@@ -1,0 +1,17 @@
+#cloud-config
+users:
+  - name: web
+    primary_group: web
+    groups: wheel
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCaOF0W4MU7s2UAxOd0Jt1auCgGLOgVbyWsWn3aCttVmxGMxFwOjpwgERGTRxHuOltfSMmY81jAgrmsYfKesn5IV4U+cnBnwaOqTTAi8myPl1q2tazy7mMNi2KPYZcjcjFX/gzz/I8qLVCdiXkXIyqgiRS7o+s0O2wHBpJ/v9PPK/1y713aWgGNiN/TRq0ftH5h6+EGcrvRl+lM6S6dZyRCxN6/PhvDHjNFCuGPROK7zAk/JdsOwemGNLXq3JzgVOO5jAaT1n7prlbwz/5cnZ2P9vGYDriy1EMv7WlbGIATB5bZYIn+YRL+NIDVj7XJbj4ynl+6b2GaXoZW2j6T7LKm3DUfS1EpjFXNkqAWv1tXZd1Ei63L/eKXRmgbdG2Pg+RpcyHbtYP0xYBLOxuuASeshaMjF3CpT82JLUSYeoTmZmJnrgLh36tp4nD8DCTue3J6zVwtExRozXurRwpctRcJyUboLA4fOjHabAUubbtFLJJBwoJ3FrgrqshScHsFRsnmIMBQ9IYOZM6/ITL3iN38AbRiSMw9lHIqy1UeLrdJDGT/U9SfIvbwqA57V4wcn7qezY1Wry+BpSGvwZXm2FuMGvVx3etVrukxMfhXLL59X2QTp9Z/kshZ+nUKcm7uz8X0VMq/jWdpXmDN2+peOb99JzNYgGrcSnilfruscf4WOQ== ubuntu@ip-172-31-21-165
+
+packages:
+  - nginx
+  - nmap
+
+runcmd:
+  - systemctl enable nginx
+  - systemctl start nginx
